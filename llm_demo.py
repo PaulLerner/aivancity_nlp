@@ -1,4 +1,6 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+import warnings
+
 
 def pipeline(text, model, tokenizer):
     messages = [
@@ -21,6 +23,7 @@ def user_loop(model, tokenizer):
 
 
 def main():
+    warnings.filterwarnings("ignore")
     model_name = "google/gemma-2-2b-it"
     model  = AutoModelForCausalLM.from_pretrained(
         model_name,
