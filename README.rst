@@ -4,10 +4,18 @@ aivancity_nlp
 Main repository for the 2024 Natural Language Processing class at
 aivancity by Paul Lerner
 
+Practical Works
+---------------
+
+- Practical Work 1: Distributional Semantics/Skipgram/word2vec https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw1_embedding.ipynb
+
 Contributing
 ------------
 
 Add Google Colab badges to PWs with https://openincolab.com/
+
+Build docs using `sphinx-build -b html . docs`
+
 
 Acknowledgements
 ----------------
