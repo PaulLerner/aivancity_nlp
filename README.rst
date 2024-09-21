@@ -27,6 +27,7 @@ This class directly builds upon:
 - Yejin Choi. (Winter 2024). CSE 447/517: Natural Language Processing (University of Washington Paul G. Allen School of Computer Science & Engineering)
 - Noah Smith. (Winter 2023). CSE 447/517: Natural Language Processing (University of Washington Paul G. Allen School of Computer Science & Engineering)
 - Benoît Sagot. (2023-2024). Apprendre les langues aux machines (Collège de France)
+- Chris Manning. (Spring 2024). Stanford CS224N: Natural Language Processing with Deep Learning
 - Classes where I was/am Teacher Assistant:
     - Christopher Kermorvant. Machine Learning for Natural Language Processing (ENSAE)
     - François Landes and Kim Gerdes. Introduction to Machine Learning and NLP (Paris-Saclay)
