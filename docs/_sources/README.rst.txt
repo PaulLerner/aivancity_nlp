@@ -8,6 +8,7 @@ Practical Works
 ---------------
 
 - Practical Work 1: Distributional Semantics/Skipgram/word2vec https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw1_embedding.ipynb
+- Practical Work 2: Transformers https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw2_transformers.ipynb
 
 Contributing
 ------------
