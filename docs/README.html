@@ -357,6 +357,15 @@ Try to summarize like:</p>
 likewise, in this case, <strong>include the link in your .pdf report</strong>)</p></li>
 </ul>
 </section>
+<section id="compute-budget">
+<h3>Compute Budget<a class="headerlink" href="#compute-budget" title="Link to this heading">#</a></h3>
+<p>T4 GPU (on Google Colab) offers 15GB of memory. This should be enough to run inference and fine-tune LLMs of a few billion parameters (or less, obviously)</p>
+<p>Note, in <cite>float32</cite>, 1 parameter = 4 bytes so a LLM of 1B parameters holds 4GB of RAM.
+But for full fine-tuning, you will need to store gradient activations (without gradient checkpointing) and optimizer states (with optimizers like Adam).</p>
+<p>Turn to quantization for cheap inference of larger models or to Parameter Efficient Fine-Tuning for full-fine tuning of LLMs of a few billion parameters.</p>
+<p>Much simpler solution: stick to smaller models of hundred of millions of parameters (e.g. BERT, GPT-2, T5).
+You’re not here to beat the state of the art but to learn NLP.</p>
+</section>
 </section>
 <section id="contributing">
 <h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">#</a></h2>
@@ -423,6 +432,7 @@ likewise, in this case, <strong>include the link in your .pdf report</strong>)</
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#group-homework-50-continous-assessment">Group Homework (50% continous assessment)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#report">Report</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code">Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-budget">Compute Budget</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>

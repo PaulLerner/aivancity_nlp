@@ -71,6 +71,20 @@ You can submit your code either as:
   likewise, in this case, **include the link in your .pdf report**)
 
 
+Compute Budget
+^^^^^^^^^^^^^^
+
+T4 GPU (on Google Colab) offers 15GB of memory. This should be enough to run inference and fine-tune LLMs of a few billion parameters (or less, obviously)
+
+Note, in `float32`, 1 parameter = 4 bytes so a LLM of 1B parameters holds 4GB of RAM.
+But for full fine-tuning, you will need to store gradient activations (without gradient checkpointing) and optimizer states (with optimizers like Adam).
+
+Turn to quantization for cheap inference of larger models or to Parameter Efficient Fine-Tuning for full-fine tuning of LLMs of a few billion parameters.
+
+Much simpler solution: stick to smaller models of hundred of millions of parameters (e.g. BERT, GPT-2, T5).
+You're not here to beat the state of the art but to learn NLP.
+
+
 Contributing
 ------------
 
