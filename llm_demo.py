@@ -1,16 +1,19 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import warnings
 
+def pipeline(text, model, tokenizer, chat=True):
+    if chat:
+        messages = [
+            {"role": "user", "content": text}
+        ]
+        inputs = tokenizer.apply_chat_template(messages, return_dict=True, tokenize=True, return_tensors="pt", add_generation_prompt=True)
+    else:
+        inputs = tokenizer([text], return_tensors="pt")
 
-def pipeline(text, model, tokenizer):
-    messages = [
-        {"role": "user", "content": text}
-    ]
-    inputs = tokenizer.apply_chat_template(messages, return_dict=True, tokenize=True, return_tensors="pt", add_generation_prompt=True)
     for k, v in inputs.items():
         inputs[k] = v.cuda()
     input_length = inputs["input_ids"].shape[1]
-    output = model.generate(**inputs, max_new_tokens=128)
+    output = model.generate(**inputs, max_new_tokens=128, top_p=0.9, do_sample=True)
     output = tokenizer.batch_decode(output[:, input_length:], skip_special_tokens=True, clean_up_tokenization_spaces=True)
     return output
 
@@ -29,6 +32,7 @@ def main():
         model_name,
         device_map="auto",
         token=True,
+        local_files_only=True,
         quantization_config=BitsAndBytesConfig(load_in_4bit=True)
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
