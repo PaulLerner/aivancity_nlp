@@ -4,6 +4,11 @@ aivancity_nlp
 Main repository for the 2024 Natural Language Processing class at
 aivancity by Paul Lerner
 
+Classes
+-------
+
+- :download:`Introduction to NLP and Distributional Semantics  <./docs/_static/NLP_1_intro_sem.pdf>`
+
 Practical Works
 ---------------
 
