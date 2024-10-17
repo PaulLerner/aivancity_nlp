@@ -22,7 +22,7 @@ copyright = '2024, Paul Lerner'
 author = 'Paul Lerner'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.1.0'
+release = 'v2024.S1'
 
 
 # -- General configuration ---------------------------------------------------
