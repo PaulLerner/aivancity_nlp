@@ -9,6 +9,8 @@ Classes
 
 - :download:`Introduction to NLP and Distributional Semantics  <./docs/_static/NLP_1_intro_sem.pdf>`
 - :download:`LLM Architectures: Attention Mechanism and Transformers  <./docs/_static/NLP_2_transformers.pdf>`
+- :download:`Large Language Models from Shannon to ChatGPT  <./docs/_static/NLP_3_LLM.pdf>`
+
 
 Practical Works
 ---------------
