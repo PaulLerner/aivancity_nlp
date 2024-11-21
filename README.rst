@@ -18,6 +18,7 @@ Practical Works
 - Practical Work 1: Distributional Semantics/Skipgram/word2vec https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw1_embedding.ipynb
 - Practical Work 2: Transformers https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw2_transformers.ipynb
 - Practical Work 3: Large Language Models https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw3_llm.ipynb
+- Practical Work 4: Information Extraction https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw4_eval_ie.ipynb
 
 
 Group Homework (50% continous assessment)
