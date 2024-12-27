@@ -1,11 +1,12 @@
 aivancity NLP
 =============
 
-Main repository for the 2024 Natural Language Processing class at
-aivancity by Paul Lerner
+Main repository for the 2024-2025 Natural Language Processing class at aivancity by Paul Lerner (both semesters)
 
-Classes
--------
+TODO 2nd semester Classes
+
+Classes (1st semester)
+----------------------
 
 - :download:`Introduction to NLP and Distributional Semantics  <./docs/_static/NLP_1_intro_sem.pdf>`
 - :download:`LLM Architectures: Attention Mechanism and Transformers  <./docs/_static/NLP_2_transformers.pdf>`
@@ -21,9 +22,10 @@ Practical Works
 - Practical Work 3: Large Language Models https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw3_llm.ipynb
 - Practical Work 4: Information Extraction https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw4_eval_ie.ipynb
 
+TODO 2nd semester Group Homework
 
-Group Homework (50% continous assessment)
------------------------------------------
+Group Homework (1st semester, 50% continous assessment)
+-------------------------------------------------------
 
 **Deadline: Monday 4th of November 23:59 (Paris CEST)** (strict deadline, 5 points malus per day late, so 4 days late means 0/20)
 

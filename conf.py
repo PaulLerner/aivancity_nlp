@@ -18,11 +18,11 @@ print(sys.path)
 # -- Project information -----------------------------------------------------
 
 project = 'aivancity'
-copyright = '2024, Paul Lerner'
+copyright = '2024-2025, Paul Lerner'
 author = 'Paul Lerner'
 
 # The full version, including alpha/beta/rc tags
-release = 'v2024.S1'
+release = 'v2024.S2'
 
 
 # -- General configuration ---------------------------------------------------
