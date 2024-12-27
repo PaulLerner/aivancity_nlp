@@ -15,13 +15,13 @@ def pipeline(text, model, tokenizer, chat=True, top_p=0.9, max_new_tokens=128, d
     input_length = inputs["input_ids"].shape[1]
     output = model.generate(**inputs, max_new_tokens=max_new_tokens, top_p=top_p, do_sample=do_sample)
     output = tokenizer.batch_decode(output[:, input_length:], skip_special_tokens=True, clean_up_tokenization_spaces=True)
-    return output
+    return output[0]
 
 
 def user_loop(*args, **kwargs):
     while True:
         answer = input(f">>> ").strip()
-        output = pipeline(answer, *args, **kwargs)[0]
+        output = pipeline(answer, *args, **kwargs)
         print(f"{output}\n")
 
 
