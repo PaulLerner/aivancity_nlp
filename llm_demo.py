@@ -1,7 +1,7 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import warnings
 
-def pipeline(text, model, tokenizer, chat=True, top_p=0.9):
+def pipeline(text, model, tokenizer, chat=True, top_p=0.9, max_new_tokens=128, do_sample=True):
     if chat:
         messages = [
             {"role": "user", "content": text}
@@ -13,15 +13,15 @@ def pipeline(text, model, tokenizer, chat=True, top_p=0.9):
     for k, v in inputs.items():
         inputs[k] = v.cuda()
     input_length = inputs["input_ids"].shape[1]
-    output = model.generate(**inputs, max_new_tokens=128, top_p=top_p, do_sample=True)
+    output = model.generate(**inputs, max_new_tokens=max_new_tokens, top_p=top_p, do_sample=do_sample)
     output = tokenizer.batch_decode(output[:, input_length:], skip_special_tokens=True, clean_up_tokenization_spaces=True)
     return output
 
 
-def user_loop(model, tokenizer):
+def user_loop(*args, **kwargs):
     while True:
         answer = input(f">>> ").strip()
-        output = pipeline(answer,model, tokenizer)[0]
+        output = pipeline(answer, *args, **kwargs)[0]
         print(f"{output}\n")
 
 
