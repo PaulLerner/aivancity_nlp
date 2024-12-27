@@ -26,6 +26,7 @@ def user_loop(*args, **kwargs):
 
 
 def main():
+    # TODO customize arguments
     warnings.filterwarnings("ignore")
     model_name = "google/gemma-2-2b-it"
     model  = AutoModelForCausalLM.from_pretrained(
@@ -40,4 +41,5 @@ def main():
 
 
 if __name__ == "__main__":
+    # TODO add jsonargparse
     main()
