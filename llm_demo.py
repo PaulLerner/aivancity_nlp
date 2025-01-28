@@ -1,4 +1,4 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
 import warnings
 
 def pipeline(text, model, tokenizer, chat=True, top_p=0.9, max_new_tokens=128, do_sample=True):
@@ -31,10 +31,10 @@ def main():
     model_name = "google/gemma-2-2b-it"
     model  = AutoModelForCausalLM.from_pretrained(
         model_name,
-        device_map="auto",
+        device_map="cuda",
         token=True,
-        local_files_only=True,
-        quantization_config=BitsAndBytesConfig(load_in_4bit=True)
+        torch_dtype="float16",
+        local_files_only=True
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     user_loop(model, tokenizer)
