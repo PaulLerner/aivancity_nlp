@@ -38,8 +38,8 @@ Acknowledgements
 
 This class directly builds upon:
 
-- Jurafsky, D., & Martin, J. H. (2024). Speech and Language Processing : An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models (3rd éd.).
-- Eisenstein, J. (2019). Natural Language Processing. 587.
+- Jurafsky, D., & Martin, J. H. (2024). Speech and Language Processing : An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models (3rd éd.). https://web.stanford.edu/~jurafsky/slp3/ed3bookaug20_2024.pdf
+- Eisenstein, J. (2019). Natural Language Processing. 587. https://nlp.cs.princeton.edu/cos484-sp21/readings/eisenstein-nlp-notes.pdf
 - Yejin Choi. (Winter 2024). CSE 447/517: Natural Language Processing (University of Washington Paul G. Allen School of Computer Science & Engineering)
 - Noah Smith. (Winter 2023). CSE 447/517: Natural Language Processing (University of Washington Paul G. Allen School of Computer Science & Engineering)
 - Benoît Sagot. (2023-2024). Apprendre les langues aux machines (Collège de France)
