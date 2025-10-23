@@ -22,8 +22,8 @@ Classes (2024-2025)
 Practical Works (2025-2026)
 ---------------
 
-- Practical Work 1: Text Classification/Bag of Words/Naive Bayes https://colab.research.google.com/github.com/LernerPaul/pw1_cls/blob/main/notebook.ipynb
-- Practical Work 2: Distributional Semantics/Skipgram/word2vec  https://colab.research.google.com/github.com/LernerPaul/pw2_embedding/blob/master/notebook.ipynb
+- Practical Work 1: Text Classification/Bag of Words/Naive Bayes https://github.com/LernerPaul/pw1_cls
+- Practical Work 2: Distributional Semantics/Skipgram/word2vec  https://github.com/LernerPaul/pw2_embedding
 
 
 Practical Works (2024-2025)
