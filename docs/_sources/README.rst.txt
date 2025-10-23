@@ -1,22 +1,34 @@
 aivancity NLP
 =============
 
-Main repository for the 2024-2025 Natural Language Processing class at aivancity by Paul Lerner (both semesters)
+Main repository for the 2024-2026 Natural Language Processing class at aivancity by Paul Lerner (both during semester 1 and 2)
 
 
-Classes
+Classes (2025-2026)
 -------
 
-- :download:`Introduction to NLP and Distributional Semantics  <./docs/_static/NLP_1_intro_sem.pdf>`
+- :download:`Introduction to NLP and Text Classification  <./docs/_static/NLP_1_intro_tok_classif_bow_nb.pptx.pdf>`
+- :download:`Distributional Semantics  <./docs/_static/NLP_2_sem.pptx.pdf>`
+- :download:`N-gram and Neural Language Models: from Shannon to ChatGPT <./docs/_static/NLP_3_LLM.pptx.pdf>`
+
+
+
+Classes (2024-2025)
+-------
+
 - :download:`LLM Architectures: Attention Mechanism and Transformers  <./docs/_static/NLP_2_transformers.pdf>`
-- :download:`Large Language Models from Shannon to ChatGPT  <./docs/_static/NLP_3_LLM.pdf>`
 - :download:`Benchmarking / Ethical, social, and environmental issues  <./docs/_static/NLP_4_evaluation_ethics.pdf>`
 
-
-Practical Works
+Practical Works (2025-2026)
 ---------------
 
-- Practical Work 1: Distributional Semantics/Skipgram/word2vec https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw1_embedding.ipynb
+- Practical Work 1: Text Classification/Bag of Words/Naive Bayes https://colab.research.google.com/github.com/LernerPaul/pw1_cls/blob/main/notebook.ipynb
+- Practical Work 2: Distributional Semantics/Skipgram/word2vec  https://colab.research.google.com/github.com/LernerPaul/pw2_embedding/blob/master/notebook.ipynb
+
+
+Practical Works (2024-2025)
+---------------
+
 - Practical Work 2: Transformers https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw2_transformers.ipynb
 - Practical Work 3: Large Language Models https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw3_llm.ipynb
 - Practical Work 4: Information Extraction https://colab.research.google.com/github/PaulLerner/aivancity_nlp/blob/main/pw4_eval_ie.ipynb
